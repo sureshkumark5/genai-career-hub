@@ -1,0 +1,57 @@
+{
+  "lastReviewed": "2026-11-24",
+  "positioning": {
+    "title": "Agentic CX Platform Architect",
+    "summary": "Few people combine 20 years of contact-center depth, a live enterprise Amazon Connect migration, and hands-on GenAI platform work in a regulated payer. Position yourself as the person who takes agentic AI from pilot to governed production in the contact center, not as a generic AI engineer.",
+    "proofPoints": [
+      "Amazon Connect migration across 50+ lines of business",
+      "GenAI Centre of Excellence on AWS Bedrock and AgentCore",
+      "Production guardrails, evals and audit design for PHI workloads",
+      "Published reference architectures and a reusable MCP server template"
+    ]
+  },
+  "phases": [
+    {
+      "name": "Now to January 2027",
+      "theme": "Quick, free credentials and a visible artifact",
+      "goals": [
+        "Complete AWS Agentic AI Demonstrated and Amazon Connect AI Fundamentals (both free)",
+        "Finish the Strands harness course and one Anthropic Academy course on MCP or Bedrock",
+        "Book the AWS AI Business Strategist beta (USD 50) before 15 Feb 2027 if CoE leadership is a goal",
+        "Publish this hub and the playbook; share one LinkedIn write-up on agentic contact-center architecture"
+      ]
+    },
+    {
+      "name": "February to April 2027",
+      "theme": "The flagship certification",
+      "goals": [
+        "Study for and pass AWS Certified Generative AI Developer – Professional (AIP-C01)",
+        "Ship Blueprint A pilot on one Connect LOB and record measured outcomes",
+        "Build an internal MCP server template on the 2026-07-28 spec and open-source a sanitized version"
+      ]
+    },
+    {
+      "name": "May to August 2027",
+      "theme": "Scale and visibility",
+      "goals": [
+        "Onboard a second LOB through the paved-road kit",
+        "Speak at an AWS Community Day or user group on governed agents in contact centers",
+        "Optional: Claude Certified Architect – Foundations if partner access is available"
+      ]
+    },
+    {
+      "name": "September to December 2027",
+      "theme": "Principal-level breadth",
+      "goals": [
+        "Optional: AWS Solutions Architect – Professional (new version) if not already held",
+        "Mentor 3–5 engineers through AIP-C01; publish a CoE operating-model case study",
+        "Refresh this roadmap from the weekly updates log"
+      ]
+    }
+  ],
+  "weeklyHabits": [
+    "Monday: read this hub's new weekly update (10 minutes)",
+    "Two evenings: one course module or one hands-on lab",
+    "Friday: write 5 lines on what you learned and applied at work"
+  ]
+}

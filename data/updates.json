@@ -1,0 +1,17 @@
+{
+  "entries": [
+    {
+      "week": "2026-11-24",
+      "headline": "Baseline: certifications reshuffled, MCP went stateless, and AI supply-chain risk became real",
+      "items": [
+        {"category": "Certification", "title": "AWS GenAI Developer – Professional (AIP-C01) is the flagship AWS AI credential", "summary": "Out of beta since March 2026; USD 300. ML Specialty retired on 31 March 2026.", "url": "https://aws.amazon.com/blogs/training-and-certification/big-news-aws-expands-ai-certification-portfolio-and-updates-security-certification"},
+        {"category": "Certification", "title": "AWS AI Business Strategist (AIB-C01) in beta at USD 50", "summary": "Business-judgement exam on AI investment, governance and scaling; early-adopter badge if passed by 15 Feb 2027.", "url": "https://aws.amazon.com/certification/certified-ai-business-strategist/"},
+        {"category": "Free learning", "title": "AWS microcredentials are free", "summary": "Includes Agentic AI Demonstrated and Securing Agent Identities Demonstrated; no Skill Builder subscription needed.", "url": "https://aws.amazon.com/blogs/training-and-certification/microcredentials-from-aws-are-now-free-heres-why-that-matters/"},
+        {"category": "AWS GenAI", "title": "Bedrock Managed Knowledge Base is GA", "summary": "Managed RAG with hybrid search, reranking and an agentic retriever; plugs into AgentCore Gateway.", "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-managed-knowledge-base/"},
+        {"category": "Protocols", "title": "MCP 2026-07-28: stateless core", "summary": "No session handshake; any request can hit any server instance. Build new MCP servers on this spec.", "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/"},
+        {"category": "Security", "title": "LiteLLM compromised on PyPI twice in 2026", "summary": "March (1.82.7, 1.82.8) and October (1.107.0 plus Docker images). Treat AI gateways as crown-jewel services.", "url": "https://www.stepsecurity.io/blog/litellm-1-107-0-compromised-pypi-backdoored-wheels-credential-stealer"}
+      ],
+      "careerAction": "This week: start the free AWS Agentic AI Demonstrated microcredential and decide whether to book the AIB-C01 beta."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "lastReviewed": "2026-11-24",
+  "intro": "One shared GenAI platform with six layers and a column of trust services; four blueprints cover most enterprise demand. Agents gather evidence and act within policy; humans make member-impacting decisions.",
+  "layers": [
+    {"name": "Channels", "detail": "Amazon Connect voice, chat and tasks; member web and app; agent desktop; employee Teams or Slack; batch jobs."},
+    {"name": "Edge and identity", "detail": "WAF, API Gateway, enterprise IdP federation, member verification, on-behalf-of tokens passed to every tool."},
+    {"name": "Routing and AI gateway", "detail": "Small intent classifier first, LLM fallback for ambiguous requests; per-LOB keys, budgets, rate limits, PHI-aware model routing."},
+    {"name": "Agent runtime", "detail": "Coordinator plus domain sub-agents (Strands or LangGraph) on AgentCore Runtime; harness with hooks, loop and token limits, checkpoints, approval gates."},
+    {"name": "Tools and knowledge", "detail": "MCP gateway to claims, eligibility, CRM, case and scheduling APIs; Managed Knowledge Base or hybrid RAG with citations."},
+    {"name": "Models", "detail": "Bedrock frontier model to reason, small model for routine steps, fine-tuned classifiers; BAA-covered models only for PHI."}
+  ],
+  "trust": ["Guardrails (input, output, tool)", "Policy (Cedar)", "Identity and consent", "Memory service", "Evals (offline and online)", "Observability (OpenTelemetry)", "Audit and cost ledger"],
+  "blueprints": [
+    {
+      "id": "A",
+      "name": "Agentic contact-center self-service",
+      "point": "Known intents stay deterministic; only open-ended requests reach the AI agent.",
+      "flow": ["Member contact (Connect)", "Verify identity and load context", "Intent router (classifier, LLM if ambiguous)", "Deterministic Lex path OR AI agent with MCP tools", "Resolved and confident?", "Close and log OR warm transfer with summary"],
+      "notes": ["Authenticate before the agent", "Small read-only tool surface first", "Voice latency budget per turn", "Pass summary, intent and auth status to the human agent"]
+    },
+    {
+      "id": "B",
+      "name": "Enterprise knowledge RAG",
+      "point": "Answers come only from retrieved, permitted, cited content.",
+      "flow": ["Ingest policies, benefits and SOPs", "Chunk by structure, tag plan, state, version, ACL", "Rewrite query and filter by caller's permissions", "Hybrid retrieve (BM25 + vector, RRF) and rerank", "Generate with citations", "Grounding check; if it fails, say unknown and offer a human"],
+      "notes": ["Pilot on Bedrock Managed Knowledge Base first", "Metadata and effective dates are half the retrieval", "Evaluate retrieval separately from generation"]
+    },
+    {
+      "id": "C",
+      "name": "Multi-agent back-office workflow",
+      "point": "Agents assemble the evidence; a licensed human makes the decision.",
+      "flow": ["Intake (prior auth or claim)", "Work queue (EventBridge, SQS)", "Coordinator (Step Functions + AgentCore)", "Document, policy and history agents in parallel", "Recommendation package with evidence", "Clinical reviewer decides; approved write-back via tool; audit ledger"],
+      "notes": ["Durable orchestration, not a chat loop", "Narrow agents with typed outputs", "Write tool callable only with a signed reviewer decision", "Idempotent writes"]
+    },
+    {
+      "id": "D",
+      "name": "Long-running proactive employee agent",
+      "point": "The agent wakes on schedules and events, then asks before it acts.",
+      "flow": ["Triggers: schedule, event, direct ask", "Decision engine filters noise", "Agent worker on AgentCore Runtime with checkpoints", "Memory and MCP tools (Connect metrics, WFM, ticketing)", "Communication gateway (Teams, Slack, email)", "Employee approves; action executes"],
+      "notes": ["Start employee-facing, not member-facing", "Heartbeats and step budgets", "One identity across channels"]
+    }
+  ],
+  "checklist": [
+    "Problem, success metric and agency level written down",
+    "Decisions the agent may never make are listed",
+    "End-user identity passed on-behalf-of to every tool",
+    "Every tool is an MCP tool with a contract, owner and allowlist entry",
+    "Only BAA-covered models see PHI; egress blocked by default",
+    "Input, output and tool-call guardrails on, with healthcare PII recognizers",
+    "Prompt-injection red-team suite passes",
+    "Loop, step, token and dollar limits per session",
+    "SME-labelled golden set; trace-level evals pass thresholds",
+    "Full traces with model, prompt version, sources and tool calls",
+    "Fallback for every dependency and a warm handoff to a human",
+    "Runbook, on-call owner and kill switch"
+  ],
+  "docNote": "The full playbook with diagrams lives in a private Claude doc."
+}

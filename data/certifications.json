@@ -1,0 +1,255 @@
+{
+  "lastVerified": "2026-11-24",
+  "items": [
+    {
+      "id": "aws-aip-c01",
+      "name": "AWS Certified Generative AI Developer – Professional",
+      "vendor": "AWS",
+      "code": "AIP-C01",
+      "type": "certification",
+      "level": "Professional",
+      "cost": "USD 300",
+      "free": false,
+      "status": "Active (standard exam since March 2026)",
+      "fit": "Top pick",
+      "priority": 1,
+      "why": "The flagship AWS credential for production GenAI on Bedrock: RAG, agents, guardrails, cost and security. Directly matches your GenAI CoE and AgentCore work, and is the credential analysts recommend most for engineers on AWS.",
+      "prep": "Free Exam Prep Plan on AWS Skill Builder; 75 questions, 180 minutes. Pair with the free AWS Agentic AI Demonstrated microcredential for hands-on practice.",
+      "url": "https://aws.amazon.com/certification/certified-generative-ai-developer-professional/",
+      "sources": [
+        "https://aws.amazon.com/blogs/training-and-certification/big-news-aws-expands-ai-certification-portfolio-and-updates-security-certification",
+        "https://digicomp.ch/certification/it-provider-certifications/amazon-web-services-certificates/aws-certified-generative-ai-developer-professional"
+      ]
+    },
+    {
+      "id": "aws-agentic-demonstrated",
+      "name": "AWS Agentic AI Demonstrated (microcredential)",
+      "vendor": "AWS",
+      "code": "Microcredential",
+      "type": "microcredential",
+      "level": "Hands-on lab assessment",
+      "cost": "Free",
+      "free": true,
+      "status": "Active; free since April 2026",
+      "fit": "Top pick",
+      "priority": 2,
+      "why": "A timed, live-environment test of troubleshooting and improving Bedrock agents. Free, practical, and a quick win before AIP-C01.",
+      "prep": "AWS Skill Builder; no subscription needed.",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/microcredentials-from-aws-are-now-free-heres-why-that-matters/",
+      "sources": [
+        "https://aws.amazon.com/blogs/training-and-certification/microcredentials-from-aws-are-now-free-heres-why-that-matters/"
+      ]
+    },
+    {
+      "id": "aws-agent-identity-demonstrated",
+      "name": "AWS Securing Agent Identities Demonstrated (microcredential)",
+      "vendor": "AWS",
+      "code": "Microcredential",
+      "type": "microcredential",
+      "level": "Hands-on lab assessment",
+      "cost": "Free",
+      "free": true,
+      "status": "Active",
+      "fit": "Recommended",
+      "priority": 3,
+      "why": "Agent identity and on-behalf-of access are the hardest part of agents touching PHI. This proves you can secure them.",
+      "prep": "AWS Skill Builder.",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/prove-your-agentic-ai-skills-two-new-microcredentials-now-available/",
+      "sources": [
+        "https://aws.amazon.com/blogs/training-and-certification/prove-your-agentic-ai-skills-two-new-microcredentials-now-available/"
+      ]
+    },
+    {
+      "id": "aws-connect-ai-fundamentals",
+      "name": "Amazon Connect AI Fundamentals (knowledge badge)",
+      "vendor": "AWS",
+      "code": "Learning plan badge",
+      "type": "badge",
+      "level": "Foundational",
+      "cost": "Free",
+      "free": true,
+      "status": "Active",
+      "fit": "Recommended",
+      "priority": 4,
+      "why": "About 6 hours on AI assistance and AI-driven workforce optimization in Connect. Cheap signal of contact-center plus AI depth; also a good baseline to assign to your migration team.",
+      "prep": "AWS Skill Builder learning plan; badge via Credly.",
+      "url": "https://aws.amazon.com/blogs/contact-center/elevate-your-amazon-connect-skills-with-specialty-training-badges",
+      "sources": [
+        "https://aws.amazon.com/blogs/contact-center/elevate-your-amazon-connect-skills-with-specialty-training-badges"
+      ]
+    },
+    {
+      "id": "aws-aib-c01",
+      "name": "AWS Certified AI Business Strategist",
+      "vendor": "AWS",
+      "code": "AIB-C01",
+      "type": "certification",
+      "level": "Business",
+      "cost": "USD 50 (beta), USD 100 standard",
+      "free": false,
+      "status": "Beta since September 2026; early-adopter badge if passed by 15 Feb 2027",
+      "fit": "Recommended",
+      "priority": 5,
+      "why": "Tests business cases, governance and scaling AI adoption, not AWS services. Fits a CoE leader who must justify use cases to LOB owners. The beta price window is the cheapest it will ever be.",
+      "prep": "Exam Prep Plan on AWS Skill Builder; 85 questions, 170 minutes in beta.",
+      "url": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+      "sources": [
+        "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+        "https://builder.aws.com/content/3Ilmw2V8qHCLpZeM5yy3BFpQt37/what-we-know-about-the-new-aws-certified-ai-business-strategist-aib-c01-exam"
+      ]
+    },
+    {
+      "id": "claude-ccar-f",
+      "name": "Claude Certified Architect – Foundations",
+      "vendor": "Anthropic",
+      "code": "CCAR-F",
+      "type": "certification",
+      "level": "Foundations",
+      "cost": "USD 125",
+      "free": false,
+      "status": "Active; launched March 2026, price raised from USD 99 on 30 June 2026",
+      "fit": "Optional",
+      "priority": 6,
+      "why": "Scenario exam on agent harnesses, Claude API, Agent SDK, Claude Code and MCP. Valuable in services firms; check whether your employer's partner status gives access or a discount. It is a single-vendor credential.",
+      "prep": "Free Anthropic Academy courses first.",
+      "url": "https://anthropic-partners.skilljar.com/page/faq-certifications",
+      "sources": [
+        "https://anthropic-partners.skilljar.com/page/faq-certifications",
+        "https://infoworld.com/article/4242723/are-ai-certifications-still-worth-it-what-changed-in-2026.html"
+      ]
+    },
+    {
+      "id": "anthropic-academy",
+      "name": "Anthropic Academy courses (API, MCP, Claude Code, Bedrock)",
+      "vendor": "Anthropic",
+      "code": "Course certificates",
+      "type": "free-course",
+      "level": "Beginner to advanced",
+      "cost": "Free",
+      "free": true,
+      "status": "Active since March 2026",
+      "fit": "Recommended",
+      "priority": 7,
+      "why": "Free courses with completion certificates, including a track for Claude on Amazon Bedrock and MCP server building. Directly reusable at work.",
+      "prep": "Self-paced on Skilljar; email signup only.",
+      "url": "https://anthropic.skilljar.com/",
+      "sources": [
+        "https://dev.to/amareswer/anthropic-academy-free-claude-courses-and-certificates-22ki"
+      ]
+    },
+    {
+      "id": "hf-agents-course",
+      "name": "Hugging Face AI Agents Course",
+      "vendor": "Hugging Face",
+      "code": "Certificate of completion",
+      "type": "free-course",
+      "level": "Intermediate",
+      "cost": "Free",
+      "free": true,
+      "status": "Active",
+      "fit": "Recommended",
+      "priority": 8,
+      "why": "Framework-neutral agent fundamentals (smolagents, LlamaIndex, LangGraph) with a benchmarked final project. Free fundamentals and full certificates.",
+      "prep": "Unit 1 quiz (80%) for fundamentals; assignment plus final challenge for the full certificate.",
+      "url": "https://huggingface.co/learn/agents-course",
+      "sources": [
+        "https://huggingface.co/learn/agents-course/en/unit0/introduction"
+      ]
+    },
+    {
+      "id": "aws-strands-course",
+      "name": "Building AI Agent Harnesses with Strands Agents",
+      "vendor": "AWS",
+      "code": "Free 14-video course",
+      "type": "free-course",
+      "level": "Intermediate",
+      "cost": "Free (Coursera certificate is paid)",
+      "free": true,
+      "status": "Active; updated July 2026",
+      "fit": "Recommended",
+      "priority": 9,
+      "why": "Agent loop to multi-agent orchestration, evaluation and production deployment on the SDK the playbook recommends. Code in aws-samples.",
+      "prep": "Videos plus the sample-building-with-strands-course repo.",
+      "url": "https://builder.aws.com/content/3GYPrAplMhl2IAl7jJW0yeKzXrR/building-ai-agent-harnesses-with-strands-agents-a-free-14-video-course/",
+      "sources": [
+        "https://builder.aws.com/content/3GYPrAplMhl2IAl7jJW0yeKzXrR/building-ai-agent-harnesses-with-strands-agents-a-free-14-video-course/"
+      ]
+    },
+    {
+      "id": "aws-sap-c03",
+      "name": "AWS Certified Solutions Architect – Professional",
+      "vendor": "AWS",
+      "code": "SAP-C03",
+      "type": "certification",
+      "level": "Professional",
+      "cost": "USD 300",
+      "free": false,
+      "status": "Updated version announced September 2026",
+      "fit": "Optional",
+      "priority": 10,
+      "why": "Broad architecture credibility for a principal role. Worth it if you do not already hold it; lower priority than AIP-C01.",
+      "prep": "AWS Skill Builder Exam Prep Plan.",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+      "sources": [
+        "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
+      ]
+    },
+    {
+      "id": "google-gen-ai-leader",
+      "name": "Google Cloud Generative AI Leader",
+      "vendor": "Google Cloud",
+      "code": "Generative AI Leader",
+      "type": "certification",
+      "level": "Business",
+      "cost": "USD 99",
+      "free": false,
+      "status": "Active",
+      "fit": "Optional",
+      "priority": 11,
+      "why": "Non-technical GenAI leadership credential with free prep. Only useful if you want a multi-cloud signal; AIB-C01 covers similar ground on AWS.",
+      "prep": "Free learning path on Google Cloud Skills Boost.",
+      "url": "https://cloud.google.com/learn/certification/generative-ai-leader",
+      "sources": [
+        "https://cloud.google.com/blog/topics/training-certifications/new-google-cloud-certification-in-generative-ai/"
+      ]
+    },
+    {
+      "id": "aws-aif-c01",
+      "name": "AWS Certified AI Practitioner",
+      "vendor": "AWS",
+      "code": "AIF-C01",
+      "type": "certification",
+      "level": "Foundational",
+      "cost": "USD 100",
+      "free": false,
+      "status": "Active",
+      "fit": "Skip",
+      "priority": 12,
+      "why": "Foundational. With your experience, go straight to AIP-C01; recommend AIF-C01 to your wider team instead.",
+      "prep": "AWS Skill Builder.",
+      "url": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+      "sources": [
+        "https://aws.amazon.com/certification/certified-ai-practitioner/"
+      ]
+    },
+    {
+      "id": "aws-mls-c01",
+      "name": "AWS Certified Machine Learning – Specialty",
+      "vendor": "AWS",
+      "code": "MLS-C01",
+      "type": "certification",
+      "level": "Specialty",
+      "cost": "Retired",
+      "free": false,
+      "status": "Retired; last exam date 31 March 2026",
+      "fit": "Skip",
+      "priority": 13,
+      "why": "No longer available to new candidates. Replaced in practice by ML Engineer – Associate and GenAI Developer – Professional.",
+      "prep": "",
+      "url": "https://aws.amazon.com/certification/certified-machine-learning-specialty/",
+      "sources": [
+        "https://aws.amazon.com/certification/certified-machine-learning-specialty/"
+      ]
+    }
+  ]
+}
